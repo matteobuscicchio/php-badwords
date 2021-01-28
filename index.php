@@ -12,10 +12,10 @@
             $replace = str_replace($_GET['replace'], '***', $paragraph);
         ?>
 
-        <span> Lunghezza paragrafo originale: <?php echo strlen($paragraph);?>. </span>
+        <span> Lunghezza paragrafo originale: <?= strlen($paragraph);?>. </span>
         
-        <p> <?php echo $replace;?> </p>
+        <p> <?= $replace;?> </p>
 
-        <span> Lunghezza paragrafo con sostituzione: <?php echo strlen($replace);?>. </span>
+        <span> Lunghezza paragrafo con sostituzione: <?= strlen($replace);?>. </span>
     </body>
 </html>
